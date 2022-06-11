@@ -1,0 +1,32 @@
+{% load static %} <!--para ler os estaticos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+        <h1>Produtos</h1>
+        <div>
+            <table>
+                <thead>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </thead>
+                <tbody>
+        
+                        {% for produto in produtos %}
+                        <tr>
+                            <td> {{ produto.nome }} </td>
+                            <td> {{ produto.preco }}</td>
+                            <td> {{ produto.quantidade }}</td>
+                        </tr>
+                        {% endfor %}
+        
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>

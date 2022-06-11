@@ -1,0 +1,40 @@
+*{
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(212, 208, 203);  
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+th{
+    font-size: 40px;
+}
+table tr td{
+    font-size: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+tr:hover{
+    background-color: aquamarine;
+}
+table{
+    margin-top: 30px;
+    text-transform: uppercase;
+    border-spacing: 0px;
+    border-collapse: separate;
+    color: #595c62;
+    font-size: 0.6em;
+    font-family: 'verdana';
+    text-align: center;
+    width: 100%;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
